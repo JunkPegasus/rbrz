@@ -1,0 +1,170 @@
+/* CSS Document */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #282828;
+}
+
+div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Roboto', sans-serif;
+}
+
+nav {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  padding: 0 20%;
+  background: #282828;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  height: 60%;
+}
+
+nav .navList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+
+nav .navList a.navListItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  height: 60%;
+  color: white;
+  margin: 0 5px;
+  -webkit-transition: background 0.166s ease;
+  transition: background 0.166s ease;
+  border-radius: 5px;
+}
+
+nav .navList a.navListItem:hover {
+  background: #336699;
+}
+
+nav .navList a.navListItem.active {
+  background: #336699;
+}
+
+div.container {
+  margin-top: 80px;
+  padding: 40px 20%;
+}
+
+div.container .breadCrumbs {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  background: #f0f0f0;
+}
+
+div.container .breadCrumbs a.breadCrumb {
+  padding-right: 10px;
+}
+
+div.container .breadCrumbs a.breadCrumb:hover {
+  text-decoration: underline;
+}
+
+div.container .breadCrumbs a.breadCrumb:not(:first-of-type) {
+  padding: 0 10px 0 5px;
+}
+
+div.container .breadCrumbs a.breadCrumb:not(:last-of-type) {
+  border-right: 1px solid #282828;
+}
+
+div.container .section {
+  margin: 30px 0;
+}
+
+div.container .section .newsEntry {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+  margin: 10px 0;
+  -webkit-transition: -webkit-box-shadow ease 0.2s;
+  transition: -webkit-box-shadow ease 0.2s;
+  transition: box-shadow ease 0.2s;
+  transition: box-shadow ease 0.2s, -webkit-box-shadow ease 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+div.container .section .newsEntry:hover {
+  -webkit-box-shadow: 0 4px 8px rgba(40, 40, 40, 0.3);
+          box-shadow: 0 4px 8px rgba(40, 40, 40, 0.3);
+}
+
+div.container .section .newsEntry::after {
+  content: '';
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: right;
+}
+
+div.container .section .newsEntry.vote {
+  border-left: 8px solid #336699;
+}
+
+div.container .section .newsEntry.vote::after {
+  background: url(../icon/SVG/ballot.svg) no-repeat;
+}
+
+div.container .section .newsEntry.appointment {
+  border-left: 8px solid #5FAD41;
+}
+
+div.container .section .newsEntry.appointment::after {
+  background: url(../icon/SVG/calendar.svg) no-repeat;
+}
+
+div.container .section .newsEntry.party {
+  border-left: 8px solid #5FAD41;
+}
+
+div.container .section .newsEntry.party::after {
+  background: url(../icon/SVG/beer.svg) no-repeat;
+}
+/*# sourceMappingURL=main.css.map */
